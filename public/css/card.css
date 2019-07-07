@@ -1,0 +1,69 @@
+.card {
+    max-width: 400px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;
+    transition-duration: .3s;
+}
+
+.card a {
+    width: 100%;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0px 5px 20px #555;
+}
+
+.card:hover .card-image img {
+    width: 110%;
+}
+
+.card-image {
+    height: max-content;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-left: -50%;
+    margin-right: -50%;
+    transition-duration: .3s;
+}
+
+.card-body {
+    text-align: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.card-date, .card-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+.card-date, .card-exceprt, #case-title {
+    color: #777;
+}
+
+#case-title {
+    position: absolute;
+    font: 18px 'Microsoft YaHei';
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}

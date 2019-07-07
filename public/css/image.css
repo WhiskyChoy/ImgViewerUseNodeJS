@@ -1,0 +1,254 @@
+body {
+    background-color: #333;
+}
+
+/*img {*/
+    /*width: 600px;*/
+    /*height: auto;*/
+/*}*/
+
+#box {
+    border: #cccccc 2px solid;
+}
+
+.core_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+}
+
+.central_container {
+    display: flex;
+    justify-content: center;
+}
+
+.central_container {
+    display: none;
+}
+
+#box {
+    position: relative;
+}
+
+.right_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+#img1 {
+    /*不透明度*/
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0, 200px, 200px, 0);
+}
+
+#main {
+    position: absolute;
+    border: 1px solid #fff;
+    width: 10%;
+    height: 10%;
+    cursor: move;
+}
+
+#preview {
+    width: 600px;
+    height: 319px;
+}
+
+#preview img {
+    position: absolute;
+}
+
+.confirm_container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-top: white solid 2px;
+}
+
+.confirm_container button {
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    color: black;
+    border: 0 solid transparent;
+    font-size: 1vw;
+    font-weight: bold;
+    transition-duration: .3s;
+    border-radius: 5px;
+    outline: none;
+}
+
+.confirm_container button:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 255, 0.8);
+    transform: scale(1.2, 1.2);
+}
+
+.confirm_container button:active {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#preview {
+    transform: scale(0.75);
+    transform-origin: left top;
+}
+
+.minDiv {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.left-up {
+    top: -4px;
+    left: -4px;
+    /*鼠标变化 n-北 w-西 s-南 e-东*/
+    cursor: nw-resize;
+}
+
+.up {
+    /*距最近的一个position属性为absolute或者relative的父级元素左边50%的距离
+    除此之外 top right bottom也是距最近的一个position属性为absolute或者relative的父级元素
+    的距离
+    */
+    left: 50%;
+    /*距离左边-4px即向左边移动4px*/
+    margin-left: -4px;
+    top: -4px;
+    cursor: n-resize;
+}
+
+.right-up {
+    right: -4px;
+    top: -4px;
+    cursor: ne-resize;
+}
+
+.right {
+    top: 50%;
+    margin-top: -4px;
+    right: -4px;
+    cursor: e-resize;
+}
+
+.right-down {
+    bottom: -4px;
+    right: -4px;
+    cursor: se-resize;
+}
+
+.down {
+    left: 50%;
+    margin-left: -4px;
+    bottom: -4px;
+    cursor: s-resize;
+}
+
+.left-down {
+    left: -4px;
+    bottom: -4px;
+    cursor: sw-resize;
+}
+
+.left {
+    bottom: 50%;
+    margin-bottom: -4px;
+    left: -4px;
+    cursor: w-resize;
+}
+
+.bottom_menu_container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.bottom_inner_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.menu_button {
+    opacity: 0.8;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    transition-duration: .3s;
+}
+
+.menu_button img {
+    width: 45px;
+}
+
+.menu_button:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transform-origin: bottom;
+    box-shadow: 0 5px 20px rgba(0, 0, 255, 0.8);
+    cursor: pointer;
+}
+
+.menu_button:active {
+    transform: scale(1);
+}
+
+#color {
+    width: 10%;
+    max-width: 40px;
+    transition-duration: .3s;
+}
+
+#color:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#lineWidth {
+    width: 15%;
+}
+
+.canvas_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#penal {
+    width: 600px;
+    height: 400px;
+}
+
+#bg {
+    width: 600px;
+    height: 400px;
+    background: #cccccc;
+    border: darkslategrey 2px solid;
+}

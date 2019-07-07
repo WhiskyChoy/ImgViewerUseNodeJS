@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片审查页</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <script src="./js/utils/axios.js"></script>
+    <script src="./js/indexMain.js" type="module"></script>
+</head>
+
+<body>
+<div class="my_header">
+    <div class="title_container">
+        <h1>
+            <span class="title_part">即刻</span>图床，抓住每一个精彩瞬间</h1>
+        <div id="userInfo"></div>
+        <a class="logout_part" id="logout">登出</a>
+    </div>
+    <div class="doc_wrapper">
+        <div class="dock-container">
+            <ul>
+                <li>
+                    <span>雄伟瀑布</span>
+                    <a href="#">
+                        <div class="circle_img_container">
+                            <img src="./images/1.jpg">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <span>璀璨银河</span>
+                    <a href="#">
+                        <div class="circle_img_container">
+                            <img src="./images/2.jpg">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <span>精彩聚会</span>
+                    <a href="#">
+                        <div class="circle_img_container">
+                            <img src="./images/3.jpg">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <span>浩瀚星空</span>
+                    <a href="#">
+                        <div class="circle_img_container">
+                            <img src="./images/4.jpg">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <span>年度晚会</span>
+                    <a href="#">
+                        <div class="circle_img_container">
+                            <img src="./images/5.jpg">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <span>善行义举</span>
+                    <a href="#">
+                        <div class="circle_img_container">
+                            <img src="./images/6.jpg">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <span>宣传演讲</span>
+                    <a href="#">
+                        <div class="circle_img_container">
+                            <img src="./images/7.jpg">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <span>发布会议</span>
+                    <a href="#">
+                        <div class="circle_img_container">
+                            <img src="./images/8.jpg">
+                        </div>
+                    </a>
+                </li>
+                <div class="title_container">
+                    <h3>今日访问量最多：</h3>
+                </div>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="masonry">
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/1.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2016-09-30
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                尼亚加拉瀑布
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                尼亚加拉河的水流冲下悬崖至下游重新汇合，在不足2公里长的河段里以每小时35.4公里的速度跌荡而下15.8米的落差，演绎出世界上最狂野的漩涡急流，经过左岸加拿大的昆斯顿、右岸美国的利维斯顿，冲过“魔鬼洞急流”，沿着最后的“利维斯顿支流峡谷”由西向东进入安大略湖。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/2.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2015-10-07
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                银河
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                银河只在晴天夜晚可见，是由无数暗星(恒星)的光引起的。银河不是银河系，而是银河系的一部分。银河系包含上千亿颗恒星、总质量大约是太阳质量的6,000亿至30,000亿倍，直径有约10万光年。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/3.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2016-03-02
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                联合国可持续发展目标
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                联合国可持续发展目标（Sustainable Development Goals）是一系列新的发展目标，将在千年发展目标到期之后继续指导2015-2030年的全球发展工作。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/4.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2018-06-14
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                星空
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                晴朗的夜空里，分布着无数闪闪发光的星星，它们三五成群组成各式各样的图案，有的明亮有的暗淡，颜色也各不相同。壮丽的星空引起人们无限的遐想，激发人们去探索宇宙天体的奥秘。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/5.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2016-02-18
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                派对
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                人们派对可以放松自己的身心，和同伴一起尽情的玩耍，快乐就是人们在派对中的感受。同时派对为各种各样的人在社会的生活提供了许多机会。人们在派对上可以结交不同的朋友，通常这些朋友都有着不同的文化，通过这种方式你可以了解更多的来自不同地区的人的文化和生活习俗。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/6.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2016-08-04
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                青年献力全球目标
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                自2016年9月1日起正式面向全社会征集公益项目以来，环球风尚盛典便得到各大基金会、慈善组织、志愿者团体及国际组织的大力支持及积极参与，共征集公益项目三百余个。经过环球风尚组委会精挑细选，“青年献力全球发展目标”项目在三百余个公益项目中成功脱颖而出，成为了35个入围全网公投阶段的项目之一。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/7.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2017-08-29
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                成败不需要借口
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                人生，看似相同的足迹，却有不同的结果。决定这些结果的原因有千千万万。但其中，在表象上，我们看到最多的就是很多人在各种借口下丧失了快乐的机会、成功的机会。一个小小的借口，折射出的是人生方方面面的不足，可能是性格的缺陷，可能是认识问题的不全面，也可能是调节情绪的无能。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/8.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2018-08-17
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                新闻发布会
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                新闻发布会是政府或某个社会组织定期、不定期或临时举办的信息和新闻发布活动，直接向新闻界发布政府政策或组织信息，解释政府或组织的重大政策和事件。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/9.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2018-02-14
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                鼓掌
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                鼓掌一词的来历，还真不好考证。可能是个时髦的外来词，像沙发柠檬一样，漂洋过海，从西方来到东方。鼓掌一词的英文单词，说鼓掌是一像声词，似鼓掌时两手的拍击声。鼓掌在汉语中的读音与英语发音没有任何瓜葛。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/10.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2016-11-28
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                蛋糕
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                蛋糕是一种古老的西点，一般是由烤箱制作的，蛋糕是用鸡蛋、白糖、小麦粉为主要原料。以牛奶、果汁、奶粉、香粉、色拉油、水，起酥油、泡打粉为辅料。经过搅拌、调制、烘烤后制成一种像海绵的点心。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/11.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2016-01-10
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                喝彩
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                喝彩过去指的是是赌博掷骰子，呼喝作势，希望中彩。后用以大声叫好。如：宋 张任国 《柳梢青》词：“挂起招牌。一声喝采，旧店新开。”
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/12.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2016-06-27
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                玩家国度
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                全球首屈一指的高端主板品牌。为了令人振奋的极致效能，全球玩家不断追寻顶尖的硬件装备，华硕工程师中的一群精英也同样热衷于此，携22年潜心研发之积淀，为超频狂人和游戏狂热者们创建了该品牌。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/13.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2018-02-16
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                宣讲会
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                宣讲会一般是指企事业单位在社会公开场合、校园等场所开设与宣传、拓展及招聘相关的主题讲座，主要向招聘对象传达相关组织、团体或企业的情况、文化价值观、人力资源政策、校园招聘的程序和职位介绍等信息。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item__content">
+            <div class="card">
+                <a href="#.">
+                    <div class="card-image">
+                        <img src="./images/14.jpg"/>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-date">
+                            <time>
+                                2018-05-13
+                            </time>
+                        </div>
+                        <div class="card-title">
+                            <h3>
+                                校园
+                            </h3>
+                        </div>
+                        <div class="card-exceprt">
+                            <p>
+                                校园，指大学、学院或学校校园中的各种景物及其建筑；凡是学校教学用地或生活用地的范围，均可称作校园。 校园又分为幼儿园，小学校园，中等学校校园，高等院校校园。
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- more items -->
+</div>
+
+</body>
+
+</html>

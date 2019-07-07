@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录与注册页</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/utils/axios.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+<div class="background_wrapper all_cover fixed">
+    <img src="./images/background.jpg"/>
+</div>
+<div class="mask fixed"></div>
+<div class="left_wrapper fixed">
+    <div class="pane_wrapper">
+        <div class="title">
+            <h1>即刻
+                <span>图片查看编辑器</span>
+            </h1>
+        </div>
+        <div class="message_wrapper">
+            <div class="message">
+                <div class="true_message">
+                    <p class="cn_part">记录生命中的精彩时刻</p>
+                    <p class="en_part">Capture every fantastic moment.</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="true_message">
+                    <p class="cn_part">把你的故事与朋友分享</p>
+                    <p class="en_part">Share your stories with friends.</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="true_message">
+                    <p class="cn_part">活在当下</p>
+                    <p class="en_part">carpe diem.</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="true_message">
+                    <p class="cn_part">从他人的图片中获取灵感</p>
+                    <p class="en_part">Get inspiration from photos by others.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="right_wrapper fixed">
+    <div class="pane_wrapper">
+        <div class="right_title_wrapper">
+            <p>欢迎使用</p>
+        </div>
+        <div class="right_input_wrapper">
+            <input id="username" placeholder="请输入您的用户名">
+        </div>
+        <div class="right_input_wrapper">
+            <input id="password" type="password" placeholder="请输入您的密码">
+        </div>
+        <div class="right_checkbox_wrapper">
+            <div class="right_checkbox_inner_wrapper">
+                <input title="免登陆" type="checkbox" id="checker">
+                <span>3天内免登录</span>
+            </div>
+        </div>
+        <div class="right_input_wrapper">
+            <button id="login">
+                登录
+            </button>
+            <button id="register">
+                注册
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

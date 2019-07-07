@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>图片剪切</title>
+    <link href="css/image.css" rel="stylesheet" type="text/css"/>
+    <link href="css/custom_range.css" rel="stylesheet" type="text/css"/>
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+<div class="core_container">
+    <div class="central_container">
+        <div id="box" class="img_container">
+            <img src="images/1.jpg" id="img1" class="imgTarget" draggable="false">
+            <img src="images/1.jpg" id="img2" class="imgTarget" draggable="false">
+            <div id="main">
+                <div id="left-up" class="minDiv left-up"></div>
+                <div id="up" class="minDiv up"></div>
+                <div id="right-up" class="minDiv right-up"></div>
+                <div id="right" class="minDiv right"></div>
+                <div id="right-down" class="minDiv right-down"></div>
+                <div id="down" class="minDiv down"></div>
+                <div id="left-down" class="minDiv left-down"></div>
+                <div id="left" class="minDiv left"></div>
+            </div>
+        </div>
+        <div class="right_container">
+            <div id="preview" class="img_container">
+                <img src="images/1.jpg" id="img3" class="imgTarget" draggable="false">
+            </div>
+            <div class="confirm_container">
+                <button id="confirm_crop">确认剪裁</button>
+            </div>
+        </div>
+    </div>
+    <div class="canvas_container">
+        <div id="bg">
+            <canvas id="penal" width="600" height="400"></canvas>
+        </div>
+    </div>
+</div>
+<div class="bottom_menu_container">
+    <div id="select" class="bottom_inner_container">
+        <div id="pen" class="menu_button">
+            <img src="icons/draw.png" draggable="false">
+        </div>
+        <div id="robber" class="menu_button">
+            <img src="icons/erase.png" draggable="false">
+        </div>
+        <div id="arc" class="menu_button">
+            <img src="icons/circle.png" draggable="false">
+        </div>
+        <div id="line" class="menu_button">
+            <img src="icons/line.png" draggable="false">
+        </div>
+        <div id="rect" class="menu_button">
+            <img src="icons/rect.png" draggable="false">
+        </div>
+        <div id="clear" class="menu_button">
+            <img src="icons/clear.png" draggable="false">
+        </div>
+        <div id="crop" class="menu_button">
+            <img src="icons/crop.png" draggable="false">
+        </div>
+        <div id="img" class="menu_button">
+            <img src="icons/read.png" draggable="false">
+            <input type="file" id="file" name="img" style="display: none"/>
+        </div>
+        <div id="save" class="menu_button">
+            <img src="icons/save.png" draggable="false">
+        </div>
+        <input title="顏色" type="color" id="color"/>
+        <input title="粗细" type="range" id="lineWidth"/>
+    </div>
+</div>
+</body>
+</html>
