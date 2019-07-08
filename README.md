@@ -8,6 +8,6 @@ This is a image viewer and editor and tag setter.
 * cookie与登录相关的字段用jwt进行了加密，无法直接查看，不易进行会话劫持
 * 后台数据库的用户信息也不使用明码储存，用户名和密码都进行了加密
 ## 运行说明
-* 要运行项目，需要在homework_server>database>db_getter.js 更改配置项，文件中有注释，数据库中应当建立好user表
+* 要运行项目，需要在homework_server>database>db_getter.js 更改配置项，文件中有注释，数据库中应当建立好相关表格
 * idea/webstorm打开，请在preference->debugger中勾选allow unsigned requests
 * cd至homework_server文件夹，使用node app.js运行项目
