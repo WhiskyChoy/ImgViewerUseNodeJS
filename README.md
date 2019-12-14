@@ -1,5 +1,5 @@
 # ImgViewerUseNodeJS
-This is a image viewer and editor and tag setter.
+This is an image viewer,an editor, and a tag setter.
 ## 代码说明
 * 前端代码在public文件夹，js使用的是原生ES6，请务必用61版（本人测试的版本）或更新的Chrome浏览器打开
 * 为username设置过期时间，到期无法自动登录
