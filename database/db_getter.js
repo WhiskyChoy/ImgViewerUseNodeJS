@@ -4,7 +4,7 @@ let mysql = require('mysql');
 let db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'cwl15914746024,.',
+    password: '#your_password',
     database: 'homeworkweb'
 });
 
